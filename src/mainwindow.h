@@ -42,6 +42,7 @@ private slots:
     void startVideo();
     void pauseVideo();
     void closeVideo();
+    void setVideo();
 
 private:
     Ui::MainWindow *ui;

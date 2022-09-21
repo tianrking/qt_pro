@@ -44,6 +44,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(ui->pushButton_6,SIGNAL(clicked()),this,SLOT(startVideo()));
     connect(ui->pushButton_7,SIGNAL(clicked()),this,SLOT(pauseVideo()));
+    connect(ui->pushButton_8,SIGNAL(clicked()),this,SLOT(setVideo()));
 
 }
 
@@ -147,7 +148,9 @@ void MainWindow::on_pushButton_5_clicked()
 
 void MainWindow::startVideo()
 {
-    player->setMedia(QUrl::fromLocalFile("/home/w0x7ce/Downloads/videoplayback.mp4"));
+//    player->setMedia(QUrl::fromLocalFile("/home/w0x7ce/Downloads/videoplayback.mp4"));
+    player->setMedia(QUrl::fromEncoded("https://cdn2.jin10.com/dc/media/mp4/dc_video.mp4"));
+
     videoWidget->show();
     player->play();
 }
@@ -162,4 +165,8 @@ void MainWindow::closeVideo()
     player->stop();
 }
 
+void MainWindow::setVideo()
+{
+    player->setPosition(10000);
+}
 
