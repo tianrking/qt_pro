@@ -4,6 +4,10 @@
 #include <QLocale>
 #include <QTranslator>
 
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QNetworkAccessManager>
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
