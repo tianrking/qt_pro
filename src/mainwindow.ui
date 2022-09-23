@@ -71,12 +71,17 @@
     </item>
     <item>
      <property name="text">
-      <string>115200</string>
+      <string>19200</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>New Item</string>
+      <string>38400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>115200</string>
      </property>
     </item>
    </widget>
@@ -84,8 +89,8 @@
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>110</y>
-      <width>113</width>
+      <y>150</y>
+      <width>71</width>
       <height>25</height>
      </rect>
     </property>
@@ -94,7 +99,7 @@
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>200</y>
+      <y>340</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -107,7 +112,7 @@
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>200</y>
+      <y>340</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -120,7 +125,7 @@
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>240</y>
+      <y>380</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -133,7 +138,7 @@
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>240</y>
+      <y>380</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -146,7 +151,7 @@
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>300</y>
+      <y>440</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -158,13 +163,20 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>180</y>
-      <width>381</width>
+      <x>460</x>
+      <y>170</y>
+      <width>291</width>
       <height>161</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout"/>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+    </layout>
    </widget>
    <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
@@ -205,6 +217,88 @@
      <string>Set_Position</string>
     </property>
    </widget>
+   <widget class="QSlider" name="horizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>370</y>
+      <width>241</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>190</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Data_Bits</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>230</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Parity</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>270</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop_Bits</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_Data_Bits">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>190</y>
+      <width>82</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_Parity">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>230</y>
+      <width>82</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_Stop_Bits">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>270</y>
+      <width>82</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -212,7 +306,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuw0x7ce">
