@@ -92,7 +92,7 @@ void MainWindow::on_pushButton_3_clicked()  //on
 
 void MainWindow::on_pushButton_4_clicked()  //off
 {
-    serialPort->write("On\n");
+    serialPort->write("Off\n");
     qDebug()<< "Off";
 }
 
