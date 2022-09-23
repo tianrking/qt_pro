@@ -2,6 +2,7 @@ QT       += core gui
 QT       += serialport network #sudo apt-get install libqt5serialport5-dev
 QT       += websockets
 QT       += multimedia multimediawidgets
+QT       += charts
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
