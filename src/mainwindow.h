@@ -76,5 +76,16 @@ private:
     QValueAxis *m_axisY_Vs;
     //绘图定义变量 End
 
+    QString portstr;  //端口名称
+    QString bardstr; //波特率
+    QString datastr;  //数据位
+
+    QString jostr;    //奇偶校验
+    qint16 joint;
+
+    QString stopstr; //停止位
+    qint16 stopint;
+
+
 };
 #endif // MAINWINDOW_H

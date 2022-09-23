@@ -93,17 +93,21 @@ void MainWindow::on_pushButton_clicked()
 
 
     //校验位
-    switch(ui->comboBox_Parity->currentIndex())
+    joint = ui->comboBox_Parity->currentIndex();
+
+    switch(joint)
     {
-        case 0: serialPort->setParity(QSerialPort::NoParity); break;
+        case 0: serialPort->setParity(QSerialPort::NoParity); qDebug()<< joint ; break;
         default: break;
     }
 
     //停止位
-    switch(ui->comboBox_Stop_Bits->currentIndex())
+    stopint =  ui->comboBox_Stop_Bits->currentIndex();
+
+    switch(stopint)
     {
-        case 1: serialPort->setStopBits(QSerialPort::OneStop); break;
-        case 2: serialPort->setStopBits(QSerialPort::TwoStop); break;
+        case 1: serialPort->setStopBits(QSerialPort::OneStop); qDebug()<< stopint ; break;
+        case 2: serialPort->setStopBits(QSerialPort::TwoStop); qDebug()<< stopint ; break;
         default: break;
     }
 
